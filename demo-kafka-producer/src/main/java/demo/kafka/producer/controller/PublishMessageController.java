@@ -33,7 +33,7 @@ public class PublishMessageController {
         return "Published";
     }
 
-    @PostMapping("/publish/bulk")
+    @PostMapping("/publish/random")
     public String publishBulk(@RequestBody BulkMessageModel bulk) {
 
         for(int i=0; i<bulk.getTotal();i++) {
